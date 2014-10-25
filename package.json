@@ -1,0 +1,27 @@
+{
+  "name": "full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/node-dev/bin/node-dev server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanhca/full-stack-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanhca/full-stack-project/issues"
+  },
+  "homepage": "https://github.com/ryanhca/full-stack-project",
+  "dependencies": {
+    "body-parser": "^1.9.1",
+    "express": "^4.10.0"
+  },
+  "devDependencies": {
+    "node-dev": "^2.6.0"
+  }
+}

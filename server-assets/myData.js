@@ -30,7 +30,7 @@ var ryansFamily = [
 		relationship: "Next Sister"
 	},
 	{
-		name:"Michellse",
+		name:"Michelle",
 		age: "26",
 		relationship: "Baby Sister"
 	}
@@ -75,3 +75,28 @@ var ryansFriends = [
 
 	}, 
 ];
+module.exports.getFriends = function(){
+	return ryansFriends;
+
+};
+module.exports.addFriends = function(newFriend){
+	ryansFriends.push(newFriend);
+}
+
+var myActivities = [
+{
+	activity: 'rafting', 
+},
+	{
+	activity: 'skiing', 
+},	{
+	activity: 'coding'
+}
+];
+module.exports.getActivities = function(){
+	return myActivities;
+}
+module.exports.addActivity = function(newActivity){
+	myActivities.push(newActivity);
+}
+
