@@ -38,7 +38,6 @@ var ryansFamily = [
 ];
 module.exports.getFamily = function(){
 	return ryansFamily;
-
 };
 module.exports.addFamily = function(newFamilyMember){
 	ryansFamily.push(newFamilyMember);
@@ -85,12 +84,11 @@ module.exports.addFriends = function(newFriend){
 
 var myActivities = [
 {
-	activity: 'rafting', 
-},
-	{
-	activity: 'skiing', 
+	name: 'rafting', 
 },	{
-	activity: 'coding'
+	name: 'skiing', 
+},	{
+	name: 'coding'
 }
 ];
 module.exports.getActivities = function(){

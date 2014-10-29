@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #0F9D58;
+}
+.main-container {
+	height: 75px;
+	width: 100;
+	display: inline-block;
+	float: left;
+	font-family: Helvetica;
+
+}
