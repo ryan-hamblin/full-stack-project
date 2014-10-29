@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="fullStack">
 <title>Full Stack Project</title>
-<!-- <link rel="stylesheet" type="text/css" href="syles/style.css"> -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="syles/style.css">
+ -->
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 <head>
-	<title></title>
 </head>
 <body ng-controller="myCtrl">
 	{{test}}
 	<br/>
 	<div class="main-container">
 		<button ng-click="getFriends()">Get Friends</button>
-		<div ng-repeat='friend in friends'>
-			{{friend.name.age}}
-		</div>
-			<br/>
+	<!-- 	 		{{friends}} -->
+			<div ng-repeat='friend in friends'>
+				{{friend.name}}
+			</div>
+				<br/>
 		<button ng-click="getFamily()">Get Family</button>
-		<div ng-repeat="member in family">
-				{{family.name.relationship}}
-		</div>
-			<br/>
+			<div ng-repeat='member in family'>
+				{{member.name}}
+				</div>
+				<br/>
 		<button ng-click="getActivities()">Get Activities</button>
-		<br/>
+			<div ng-repeat='activity in activities'>
+				{{activity.name}}
+			</div>
+			<br/>
 	<form>
 		<input type="text" ng-model='newFriend' placeholder="add new friend">
 		<button ng-click="">Add New Friend</button>

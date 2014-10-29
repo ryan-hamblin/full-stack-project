@@ -1,4 +1,5 @@
 var app = angular.module('fullStack');
+
 app.controller('myCtrl', function($scope, myService){
 	$scope.test = "Hellow Newman";
 	
@@ -7,13 +8,24 @@ app.controller('myCtrl', function($scope, myService){
 	$scope.showActivities = false;
 	$scope.friends = '';
 
-	$scope.getfriends = function(){
-		console.log("riends")
-		myService.getFriends().then(function(friends){
+	$scope.getFriends = function() {
+		myService.getFriends().then(function(friends) {
+			console.log(friends);
 			$scope.friends = friends;
 		})
-	}
-	
+	};	
+	$scope.getFamily = function() {
+		myService.getFamily().then(function(family) {
+			console.log(family);
+			$scope.family = family;
+		})
+	};
+	$scope.getActivities = function() {
+		myService.getActivities().then(function(activity) {
+			console.log(activity);
+			$scope.activity = activity;
+		})
+	};
 
 	// var toggleFriends = function(){
 	// 	$scope.showFriends = !$scope.showFriends;

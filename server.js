@@ -1,11 +1,11 @@
-var myData = require('./server-assets/myData.js')
+var myData = require('./server-assets/myData.js');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.json());
 
-app.use(express.static('.public'));
+app.use(express.static('./public'));
 
 app.get('/family', function (req, res){
 	res.status(200).json(myData.getFamily())
@@ -24,7 +24,7 @@ app.post('/friends', function (req, res){
 	myData.addFriends(req.body)
 	res.status(200).json(myData.getFriends())
 })
-app.post(/activities/, function (req, res){
+app.post('/activities', function (req, res){
 	myData.addActivity(req.body)
 	res.status(200).json(myData.getActivities())
 })
